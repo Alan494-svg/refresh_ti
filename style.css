@@ -1,0 +1,338 @@
+/* ===== VARIÁVEIS DE CORES ===== */
+:root {
+  --roxo-claro: #5b507a;
+  --roxo-escuro: #3a2f4f;
+  --verde: #cbe82e; /*#3a2f4f      5b507a*/
+  --branco: #ffffff;
+  --cinza-claro: #f4f4f4;
+}
+
+/* ===== RESET + ESTRUTURA ===== */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--cinza-claro);
+  font-family: Arial, sans-serif;
+}
+
+main {
+  flex: 1;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  background: linear-gradient(
+    90deg,
+    var(--roxo-claro),
+    var(--roxo-escuro)
+  ) !important;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: var(--branco) !important;
+  font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--verde) !important;
+}
+
+/* ===== TÍTULOS ===== */
+h1, h2, h3 {
+  color: var(--roxo-escuro);
+  font-weight: 600;
+}
+
+.texto{
+  color: var(--verde);
+  font-weight: 600;
+}
+
+/* ===== BOTÕES ===== */
+.btn-primary {
+  background-color: var(--verde);
+  border: none;
+  color: #000;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: #cbe82e;
+}
+
+/* ===== CARDS ===== */
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-title {
+  color: var(--roxo-escuro);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
+}
+
+/* ===== FORMULÁRIO ===== */
+form {
+  background-color: var(--branco);
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.form-label {
+  font-weight: 600;
+  color: var(--roxo-escuro);
+}
+
+.form-control:focus {
+  border-color: var(--verde);
+  box-shadow: 0 0 0 0.2rem rgba(97, 196, 84, 0.25);
+}
+
+/* ===== LINKS ===== */
+a {
+  color: var(--roxo-claro);
+}
+
+a:hover {
+  color: var(--verde);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: linear-gradient(
+    90deg,
+    var(--roxo-escuro),
+    var(--verde)
+  );
+  color: var(--branco);
+  text-align: center;
+  padding: 15px;
+  margin-top: auto;
+}
+
+/* ===== PADRONIZAÇÃO GLOBAL DE LINKS ===== */
+a,
+a:visited {
+  color: var(--roxo-claro) !important;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: var(--verde) !important;
+  text-decoration: underline;
+}
+
+/* ===== LINKS DO NAVBAR ===== */
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: var(--branco) !important;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: var(--verde) !important;
+}
+
+/* ===== LINKS BOOTSTRAP (text-primary, etc) ===== */
+.text-primary {
+  color: var(--roxo-escuro) !important;
+}
+
+/* ===== LINKS DENTRO DE CARDS ===== */
+.card a {
+  color: var(--roxo-claro) !important;
+}
+
+.card a:hover {
+  color: var(--verde) !important;
+}
+
+/* ===== NOME DA EMPRESA FIXO (NÃO LINK) ===== */
+.navbar-brand {
+  color: var(--verde) !important;
+  font-weight: 700;
+  cursor: default;
+}
+
+/* Garante que nunca mude */
+.navbar-brand:hover,
+.navbar-brand:focus {
+  color: var(--verde) !important;
+}
+
+#myCarousel {
+    height: calc(100vh - 200px); /* ajusta conforme o tamanho do menu */
+}
+
+#myCarousel .carousel-inner,
+#myCarousel .carousel-item {
+    height: 100%;
+}
+
+#myCarousel svg {
+    height: 100%;
+    width: 100%;
+}
+
+/* Ajuste de img*/
+.carousel-item img {
+  width: 100%;
+  height: 500px;          /* ajuste a altura como quiser */
+  object-fit: contain;    /* NÃO corta a imagem */
+  background-color: var(--roxo-escuro); /* opcional (preenche espaço vazio) */
+}
+
+/* RESET */
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+/* HERO FULLSCREEN */
+.hero {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 56px); /* tela inteira menos navbar */
+  overflow: hidden;
+  background-color: #3a2f4f;
+}
+
+/* Carousel ocupa tudo */
+#heroCarousel,
+#heroCarousel .carousel-inner,
+#heroCarousel .carousel-item {
+  width: 100%;
+  height: 100%;
+}
+
+/* Imagem ocupa tudo */
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* preenche sem sobrar espaço */
+}
+
+/* Texto sobre o fundo */
+.hero-text {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  text-align: center;
+  padding: 20px;
+
+  background: rgba(58, 47, 79, 0.5);
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+/* HERO OCUPA TODA A TELA (MENOS NAVBAR) */
+.hero {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 56px); /* altura da navbar */
+  overflow: hidden;
+}
+
+/* Carousel ocupa tudo */
+#heroCarousel,
+#heroCarousel .carousel-inner,
+#heroCarousel .carousel-item {
+  height: 100%;
+}
+
+/* Imagem colada em cima e embaixo */
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* preenche sem sobrar espaço */
+}
+
+/* Texto por cima */
+.hero-text {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  color: #fff;
+  background: rgba(58, 47, 79, 0.45);
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(58, 47, 79, 0.8); /* controla a opacidade aqui */
+  z-index: 1;
+}
+
+/* garante que imagem fique atrás */
+.hero-img {
+  position: relative;
+  z-index: 0;
+}
+
+/* Faz a página ocupar a tela inteira */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Fundo padrão do site */
+body {
+  background: linear-gradient(180deg, #cce82e44, #cce82e44);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Conteúdo principal cresce até empurrar o footer */
+main {
+  flex: 1;
+}
+
+.sobre-wrapper {
+  min-height: calc(100vh - 120px); /* desconta navbar + footer */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* CENTRALIZA VERTICAL */
+  align-items: center;     /* CENTRALIZA HORIZONTAL */
+  gap: 40px;
+}
+
+/* Limita largura dos cards */
+.sobre-wrapper .card {
+  max-width: 900px;
+  width: 100%;
+}
+
+
