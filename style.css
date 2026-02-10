@@ -335,4 +335,16 @@ main {
   width: 100%;
 }
 
+body {
+    background-color: #f5f6fa;
+}
+
+.caixa-sugestoes {
+    background-color: #ffffff;
+}
+
+.titulo-intr {
+    color: #5b2d8b;
+}
+
 
