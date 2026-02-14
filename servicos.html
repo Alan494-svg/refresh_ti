@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <title>Serviços</title>
@@ -16,67 +17,106 @@
 
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <div class="container">
-    <span class="navbar-brand">REFRESH TI</span>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <span class="navbar-brand">REFRESH TI</span>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse" id="menu">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
-        <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
-        <li class="nav-item"><a class="nav-link active" href="servicos.html">Serviços</a></li>
-        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
-      </ul>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link active" href="servicos.html">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-<!-- CONTEÚDO PRINCIPAL -->
-<main class="container my-5">
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main class="container my-5">
 
-  <h2 class="text-center mb-4">Nossos Serviços</h2>
+    <h2 class="text-center mb-4">Nossos Serviços</h2>
 
-  <div class="row justify-content-center">
+    <div class="card p-3 shadow card-click" data-bs-toggle="collapse" data-bs-target="#formatacao"
+      style="cursor: pointer; margin-bottom: 20px;">
 
-    <div class="col-12 col-md-4 mb-4">
-      <div class="card shadow h-100 text-center">
-        <div class="card-body">
-          <h5 class="card-title">Consultoria</h5>
-          <p class="card-text">Planejamento e soluções estratégicas.</p>
-        </div>
+      <h1 class="text-center mb-3">Formatação</h1>
+
+      <!-- CONTEÚDO OCULTO -->
+      <div class="collapse mt-3" id="formatacao">
+        <hr>
+
+        <p class="fs-6 text-center">
+          FORMATAÇÃO COMPLETA DE COMPUTADOR
+        </p>
+
+        <p class="fs-6 text-center">
+        <p><b>INCLUE:</b></p>
+        <b>Leitor de PDF</b>
+        <p>WPS PDF</p>
+        <b>Compactador de Arquivos</b>
+        <p>WinRAR</p>
+        <p style="margin-top: -20px;">Abre arquivos .zip, .rar e outros</p>
+        <b>Segurança</b>
+        <p>Windows Defender ativado e atualizado</p>
+        <p style="margin-top: -20px;">Firewall configurado</p>
+        <p style="margin-top: -20px;">Sistema protegido contra vírus</p>
+        <b>Multimídia</b>
+        <p>VLC Media Player</p>
+        <p style="margin-top: -20px;">Abre praticamente qualquer vídeo ou música</p>
+        <b>Utilitários (opcional)</b>
+        <p>AnyDesk (acesso remoto)</p>
+        <p style="margin-top: -20px;">CCleaner (limpeza básica)</p>
+        </p>
       </div>
     </div>
 
-    <div class="col-12 col-md-4 mb-4">
-      <div class="card shadow h-100 text-center">
-        <div class="card-body">
-          <h5 class="card-title">Manutenção</h5>
-          <p class="card-text">Suporte técnico especializado.</p>
-        </div>
+    <div class="card p-3 shadow card-click" data-bs-toggle="collapse" data-bs-target="#formatacaoBackup"
+      style="cursor: pointer;">
+
+      <h1 class="text-center mb-3">Formatação + Backup</h1>
+
+      <!-- CONTEÚDO OCULTO -->
+      <div class="collapse mt-3" id="formatacaoBackup">
+        <hr>
+
+        <p class="fs-6 text-center">
+           FORMATAÇÃO COMPLETA DE COMPUTADOR
+        </p>
+
+        <p class="fs-6 text-center">
+        <p><b>INCLUE:</b></p>
+        <b>Backup</b>
+        <p>Realizamos a cópia segura dos seus arquivos antes da formatação.</p>
+        <b>Leitor de PDF.</b>
+        <p>WPS PDF.</p>
+        <b>Compactador de Arquivos</b>
+        <p>WinRAR</p>
+        <p style="margin-top: -20px;">Abre arquivos .zip, .rar e outros.</p>
+        <b>Segurança</b>
+        <p>Windows Defender ativado e atualizado.</p>
+        <p style="margin-top: -20px;">Firewall configurado.</p>
+        <p style="margin-top: -20px;">Sistema protegido contra vírus.</p>
+        <b>Multimídia</b>
+        <p>VLC Media Player</p>
+        <p style="margin-top: -20px;">Abre praticamente qualquer vídeo ou música.</p>
+        <b>Utilitários (opcional)</b>
+        <p>AnyDesk (acesso remoto).</p>
+        <p style="margin-top: -20px;">CCleaner (limpeza básica).</p>
+        </p>
       </div>
-    </div>
 
-    <div class="col-12 col-md-4 mb-4">
-      <div class="card shadow h-100 text-center">
-        <div class="card-body">
-          <h5 class="card-title">Atendimento</h5>
-          <p class="card-text">Rápido, eficiente e humanizado.</p>
-        </div>
-      </div>
-    </div>
+  </main>
 
-  </div>
+  <footer class="bg-dark text-white text-center p-3">
+    © 2026 - Refresh TI
+  </footer>
 
-</main>
-
-<footer class="bg-dark text-white text-center p-3">
-  © 2026 - Refresh TI
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
