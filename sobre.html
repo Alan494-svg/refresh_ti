@@ -17,7 +17,48 @@
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container">
-      <span class="navbar-brand">REFRESH TI</span>
+      <span class="navbar-brand; titulo-principal">REFRESH TI</span>
+
+      <style>
+        @font-face {
+          font-family: 'MinhaFonte';
+          src: url('fontes/Orbitron/Orbitron-VariableFont_wght.ttf') format('truetype');
+        }
+
+        @font-face {
+          font-family: 'MinhaFonte2';
+          src: url('fontes/Share_Tech_Mono/ShareTechMono-Regular.ttf') format('truetype');
+        }
+
+         @font-face {
+          font-family: 'MinhaFonte3';
+          src: url('fontes/Bebas_Neue/BebasNeue-Regular.ttf') format('truetype');
+        }
+
+        @font-face {
+          font-family: 'MinhaFonte4';
+          src: url('fontes/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+        }
+
+        .titulo-principal {
+          font-family: 'MinhaFonte', sans-serif;
+          color: #cbe82e;
+
+        }
+
+        .tech {
+          font-family: 'MinhaFonte2', monospace;
+        }
+
+        .bebas{
+          font-family: 'MinhaFonte3', sans-serif;
+        }
+
+        .montserrat {
+          font-family: 'MinhaFonte4', monospace;
+        }
+
+      </style>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
         <span class="navbar-toggler-icon"></span>
@@ -41,14 +82,14 @@
     <div class="card p-3 shadow card-click" data-bs-toggle="collapse" data-bs-target="#quemSomosInfo"
       style="cursor: pointer;">
 
-      <h1 class="text-center mb-3">Quem somos</h1>
+      <h1 class="text-center mb-3; titulo-principal" style="color: #5b507a;">Quem somos</h1>
 
-      <p class="fs-5 text-center">
+      <p class="fs-5 text-center; montserrat" style="text-align: center;">
         A Refresh TI é um serviço focado em formatação de computadores.
       </p>
 
       <!-- CONTEÚDO OCULTO -->
-      <div class="collapse mt-3" id="quemSomosInfo">
+      <div class="collapse mt-3; montserrat" id="quemSomosInfo">
         <hr>
 
         <p class="fs-6 text-center">
@@ -57,7 +98,7 @@
         </p>
 
         <p class="fs-6 text-center">
-         Cada formatação é feita com cuidado, garantindo estabilidade,
+          Cada formatação é feita com cuidado, garantindo estabilidade,
           organização e melhor desempenho do computador.
         </p>
       </div>
@@ -68,16 +109,16 @@
     <div class="card p-3 shadow card-click" data-bs-toggle="collapse" data-bs-target="#objetivoInfo"
       style="cursor: pointer; margin-top: 20px;">
 
-      <h1 class="text-center mb-3">Nosso objetivo</h1>
+      <h1 class="text-center mb-3; titulo-principal" style="color: #5b507a;">Nosso objetivo</h1>
 
-      <p class="fs-5 text-center">
-       Nosso objetivo é entregar um computador rápido, seguro
-          e pronto para uso no dia a dia.
+      <p class="fs-5 text-center; montserrat" style="text-align: center;">
+        Nosso objetivo é entregar um computador rápido, seguro
+        e pronto para uso no dia a dia.
       </p>
 
       <!-- CONTEÚDO OCULTO -->
 
-      <div class="collapse mt-3" id="objetivoInfo">
+      <div class="collapse mt-3; montserrat" id="objetivoInfo">
         <hr>
 
         <p class="fs-6 text-center">
