@@ -352,3 +352,28 @@ body {
   align-items: center;     /* vertical */
 }
 
+.navbar-brand {
+  text-decoration: none;  /* remove sublinhado */
+  color: #cbe82e;         /* cor fixa */
+}
+
+.navbar-brand:hover {
+  color: #cbe82e;         /* não muda ao passar o mouse */
+  text-decoration: none;
+}
+
+/* ===== LOGO / NOME FIXO ===== */
+.navbar-brand,
+.navbar-brand:link,
+.navbar-brand:visited,
+.navbar-brand:hover,
+.navbar-brand:focus,
+.navbar-brand:active {
+  color: var(--verde) !important;
+  text-decoration: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+
+
