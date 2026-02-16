@@ -19,7 +19,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container">
-      <span class="navbar-brand">REFRESH TI</span>
+      <span class="navbar-brand; titulo-principal">REFRESH TI</span>
 
       <style>
         @font-face {
@@ -32,6 +32,16 @@
           src: url('fontes/Share_Tech_Mono/ShareTechMono-Regular.ttf') format('truetype');
         }
 
+        @font-face {
+          font-family: 'MinhaFonte3';
+          src: url('fontes/Bebas_Neue/BebasNeue-Regular.ttf') format('truetype');
+        }
+
+        @font-face {
+          font-family: 'MinhaFonte4';
+          src: url('fontes/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+        }
+
         .titulo-principal {
           font-family: 'MinhaFonte', sans-serif;
           color: #cbe82e;
@@ -40,6 +50,14 @@
 
         .tech {
           font-family: 'MinhaFonte2', monospace;
+        }
+
+        .bebas {
+          font-family: 'MinhaFonte3', sans-serif;
+        }
+
+        .montserrat {
+          font-family: 'MinhaFonte4', monospace;
         }
       </style>
 
@@ -61,15 +79,16 @@
   <!-- CONTEÚDO PRINCIPAL -->
   <main class="container my-5">
 
-    <h2 class="text-center mb-4">Nossos Serviços</h2>
+    <h4 class="text-center mb-4; titulo-principal" style="color: #5b507a; margin-bottom: 30px; margin-top: -15px;">
+      <b>Nossos Serviços</b></h4>
 
     <div class="card p-3 shadow card-click" data-bs-toggle="collapse" data-bs-target="#formatacao"
       style="cursor: pointer; margin-bottom: 20px;">
 
-      <h1 class="text-center mb-3">Formatação</h1>
+      <h1 class="text-center mb-3; titulo-principal" style="color: #5b507a">Formatação</h1>
 
       <!-- CONTEÚDO OCULTO -->
-      <div class="collapse mt-3" id="formatacao">
+      <div class="collapse mt-3; montserrat" id="formatacao">
         <hr>
 
         <p class="fs-6 text-center">
@@ -100,10 +119,10 @@
     <div class="card p-3 shadow card-click" data-bs-toggle="collapse" data-bs-target="#formatacaoBackup"
       style="cursor: pointer; margin-bottom: 20px;">
 
-      <h1 class="text-center mb-3">Formatação + Backup</h1>
+      <h1 class="text-center mb-3; titulo-principal" style="color: #5b507a">Formatação + Backup</h1>
 
       <!-- CONTEÚDO OCULTO -->
-      <div class="collapse mt-3" id="formatacaoBackup">
+      <div class="collapse mt-3; montserrat" id="formatacaoBackup">
         <hr>
 
         <p class="fs-6 text-center">
@@ -138,10 +157,10 @@
     <div class="card p-3 shadow card-click" data-bs-toggle="collapse" data-bs-target="#transferencia"
       style="cursor: pointer; margin-bottom: 20px;">
 
-      <h1 class="text-center mb-3">Transferência de Dados</h1>
+      <h1 class="text-center mb-3; titulo-principal" style="color: #5b507a">Transferência de Dados</h1>
 
       <!-- CONTEÚDO OCULTO -->
-      <div class="collapse mt-3" id="transferencia">
+      <div class="collapse mt-3; montserrat" id="transferencia">
         <hr>
 
         <p class="fs-6 text-center">
@@ -164,10 +183,10 @@
     <div class="card p-3 shadow card-click" data-bs-toggle="collapse" data-bs-target="#backup.alt"
       style="cursor: pointer; margin-bottom: 20px;">
 
-      <h1 class="text-center mb-3">Backup Automático</h1>
+      <h1 class="text-center mb-3; titulo-principal" style="color: #5b507a">Backup Automático</h1>
 
       <!-- CONTEÚDO OCULTO -->
-      <div class="collapse mt-3" id="backup.alt">
+      <div class="collapse mt-3; montserrat" id="backup.alt">
         <hr>
 
         <p class="fs-6 text-center">
@@ -184,39 +203,58 @@
         <p>✔ Segurança para fotos, documentos e arquivos pessoais</p>
 
         <p>Seus dados protegidos de forma automática.</p>
-        </p>
       </div>
     </div>
 
     <div class="card p-3 shadow card-click" data-bs-toggle="collapse" data-bs-target="#pendrive"
       style="cursor: pointer; margin-bottom: 20px;">
 
-      <h1 class="text-center mb-3">Gravação de Pendrives</h1>
+      <h1 class="text-center mb-3; titulo-principal" style="color: #5b507a">Gravação de Pendrives</h1>
 
       <!-- CONTEÚDO OCULTO -->
-      <div class="collapse mt-3" id="pendrive">
+      <div class="collapse mt-3; montserrat" id="pendrive">
         <hr>
 
         <p class="fs-6 text-center">
-          CONFIGURAÇÃO DE BACKUP AUTOMÁTICO
+        SEUS ARQUIVOS EM BOAS MÃOS: SERVIÇO DE GRAVAÇÃO EM PENDRIVE
         </p>
 
-        <p class="fs-6 text-center">
-        <p>Configuramos o backup automático para proteger seus arquivos importantes.</p>
-
-        <p><b>Inclui:</b></p>
-
-        <p>✔ Configuração de backup automático</p>
-        <p>✔ Proteção contra perda de arquivos</p>
-        <p>✔ Segurança para fotos, documentos e arquivos pessoais</p>
-
-        <p>Seus dados protegidos de forma automática.</p>
+        <p class="fs-6">
+          Precisa de espaço no celular ou quer ter seus documentos e vídeos sempre à mão?
+          Eu gravo qualquer conteúdo para você com total organização!
         </p>
+
+        <p class="fs-6"><b>O que eu gravo:</b></p>
+
+        <p class="fs-6">
+          ✔ Mídias: Músicas, Filmes, Séries e Fotos.
+        </p>
+
+        <p class="fs-6">
+          ✔ Documentos: PDFs, Apostilas e Backups de trabalho.
+        </p>
+
+        <p class="fs-6">
+          ✔ Utilidades: Instaladores de programas, Drivers e Sistemas.
+        </p>
+
+        <p class="fs-6">
+          ✔ Memórias: Vídeos de família e álbuns de fotos antigos.
+        </p>
+
+        <p class="fs-6"><b>🚀 Diferencial:</b></p>
+
+        <p class="fs-6">
+          Arquivos organizados por pastas, livres de vírus e prontos para uso imediato
+          em PCs, TVs ou som automotivo.
+        </p>
+
+
       </div>
     </div>
   </main>
 
-  <footer class="bg-dark text-white text-center p-3">
+  <footer class="bg-dark text-white text-center p-3; montserrat">
     © 2026 - Refresh TI
   </footer>
 

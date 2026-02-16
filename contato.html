@@ -23,7 +23,7 @@
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
         <div class="container">
-            <span class="navbar-brand">REFRESH TI</span>
+            <span class="navbar-brand; titulo-principal">REFRESH TI</span>
 
             <style>
                 @font-face {
@@ -36,6 +36,16 @@
                     src: url('fontes/Share_Tech_Mono/ShareTechMono-Regular.ttf') format('truetype');
                 }
 
+                @font-face {
+                    font-family: 'MinhaFonte3';
+                    src: url('fontes/Bebas_Neue/BebasNeue-Regular.ttf') format('truetype');
+                }
+
+                @font-face {
+                    font-family: 'MinhaFonte4';
+                    src: url('fontes/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+                }
+
                 .titulo-principal {
                     font-family: 'MinhaFonte', sans-serif;
                     color: #cbe82e;
@@ -44,6 +54,14 @@
 
                 .tech {
                     font-family: 'MinhaFonte2', monospace;
+                }
+
+                .bebas {
+                    font-family: 'MinhaFonte3', sans-serif;
+                }
+
+                .montserrat {
+                    font-family: 'MinhaFonte4', monospace;
                 }
             </style>
 
@@ -63,15 +81,15 @@
     </nav>
 
     <!-- CONTEÚDO -->
-    <main class="container py-5 mt-5">
+    <main class="container py-5 mt-5; caixa" style="margin-top: 100px;">
 
-        <h1 class="text-center fw-bold mb-4 titulo-intr">Entre em Contato</h1>
+        <h4 class="text-center fw-bold mb-4 titulo-intr; titulo-principal" style="color: #5b507a;"><b>Entre em Contato</b></h4>
 
-        <div class="card shadow mx-auto" style="max-width: 500px;">
+        <div class="card shadow mx-auto" style="max-width: 500px">
             <div class="card-body">
 
                 <!-- WhatsApp -->
-                <div class="d-flex align-items-center justify-content-between border-bottom py-3">
+                <div class="d-flex align-items-center justify-content-between border-bottom py-3 montserrat">
                     <div class="d-flex align-items-center gap-3">
                         <i class="bi bi-whatsapp fs-3 text-success"></i>
                         <div>
@@ -83,7 +101,7 @@
                 </div>
 
                 <!-- Email -->
-                <div class="d-flex align-items-center justify-content-between border-bottom py-3">
+                <div class="d-flex align-items-center justify-content-between border-bottom py-3 montserrat" style="margin-top: 5px; margin-bottom: 5px;">
                     <div class="d-flex align-items-center gap-3">
                         <i class="bi bi-envelope fs-3" style="color: rgb(25, 100, 197);"></i>
                         <div>
@@ -95,7 +113,7 @@
                 </div>
 
                 <!-- Instagram -->
-                <div class="d-flex align-items-center justify-content-between py-3">
+                <div class="d-flex align-items-center justify-content-between py-3 montserrat">
                     <div class="d-flex align-items-center gap-3">
                         <i class="bi bi-instagram fs-3 text-danger"></i>
                         <div>
